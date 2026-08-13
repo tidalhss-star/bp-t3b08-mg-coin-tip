@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/2) · t3b08-mg-coin-tip</title>
+  <meta name="description" content="t3b08-mg-coin-tip에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://magok-song-room.mapo-room-guide.xyz/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+:root {
+ --acid-yellow: #E6FF00;
+ --acid-yellow-dim: #A6B800;
+ --brutal-black: #0D0D0D;
+ --brutal-gray: #1A1A1A;
+ --brutal-gray-light: #2A2A2A;
+ --brutal-white: #F0F0F0;
+ --brutal-red: #FF3B3B;
+ --border-heavy: 3px solid #E6FF00;
+ --border-thin: 1px solid #A6B800;
+ --font-mono: 'Courier New', Courier, monospace;
+ --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+ --spacing-unit: 1rem;
+ --grid-gap: 2rem;
+}
+
+html {
+ font-size: 16px;
+ scroll-behavior: smooth;
+ background-color: var(--brutal-black);
+}
+
+body {
+ background-color: var(--brutal-gray);
+ color: var(--brutal-white);
+ font-family: var(--font-sans);
+ line-height: 1.6;
+ overflow-x: hidden;
+ min-height: 100vh;
+ border-left: 8px solid var(--acid-yellow);
+ border-right: 8px solid var(--acid-yellow-dim);
+}
+
+.q-hero-nivj {
+ position: relative;
+ padding: 4rem 2rem;
+ background-color: var(--brutal-black);
+ border-bottom: var(--border-heavy);
+ overflow: hidden;
+ z-index: 1;
+}
+
+.q-hero-nivj::before {
+ content: '';
+ position: absolute;
+ top: -50px;
+ left: -50px;
+ width: 200px;
+ height: 200px;
+ background: repeating-linear-gradient(0deg, transparent, transparent 8px, var(--acid-yellow) 8px, var(--acid-yellow) 10px);
+ opacity: 0.15;
+ z-index: -1;
+ animation: scanline-move 8s linear infinite;
+}
+
+@keyframes scanline-move {
+ 0% { transform: translateY(0); }
+ 100% { transform: translateY(100px); }
+}
+
+header {
+ max-width: 1200px;
+ margin: 0 auto 2rem auto;
+ text-align: left;
+}
+
+.v-img-kxra {
+ position: absolute;
+ right: 2rem;
+ bottom: 2rem;
+ width: 180px;
+ height: 180px;
+ background: var(--acid-yellow);
+ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 100%, 0% 100%);
+ opacity: 0.3;
+ z-index: 0;
+ mix-blend-mode: difference;
+}
+
+.n-card-gvfk {
+ background-color: var(--brutal-gray);
+ border: var(--border-thin);
+ padding: 1.5rem;
+ margin-bottom: 1.5rem;
+ transition: transform 0.1s ease, box-shadow 0.1s ease;
+ position: relative;
+ z-index: 2;
+}
+
+.n-card-gvfk:hover {
+ transform: translate(-4px, -4px);
+ box-shadow: 8px 8px 0px var(--acid-yellow);
+}
+
+.n-card-gvfk a {
+ color: var(--acid-yellow);
+ text-decoration: none;
+ font-weight: bold;
+ border-bottom: 2px solid transparent;
+ transition: border-bottom 0.2s;
+}
+
+.n-card-gvfk a:hover {
+ border-bottom: 2px solid var(--acid-yellow);
+ color: var(--brutal-white);
+}
+
+.n-body-s5uf {
+ max-width: 1100px;
+ margin: 0 auto;
+ padding: 3rem 2rem;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ gap: 2rem;
+}
+
+.q-nav-cjy6 {
+ background-color: var(--brutal-black);
+ border-bottom: var(--border-heavy);
+ padding: 1rem 2rem;
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ gap: 1.5rem;
+}
+
+.q-nav-cjy6 a {
+ color: var(--acid-yellow);
+ font-family: var(--font-mono);
+ font-weight: bold;
+ text-decoration: none;
+ font-size: 0.9rem;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+ padding: 0.25rem 0.5rem;
+ border-bottom: 2px solid transparent;
+ transition: border-bottom 0.2s;
+}
+
+.q-nav-cjy6 a:hover {
+ border-bottom: 2px solid var(--acid-yellow);
+ color: var(--brutal-white);
+}
+
+.t-box-4f3h {
+ background-color: var(--brutal-black);
+ border: 3px solid var(--acid-yellow);
+ padding: 2rem;
+ position: relative;
+ margin-bottom: 2rem;
+ grid-column: 1 / -1;
+}
+
+.t-box-4f3h::before {
+ content: '[데이터 소스: 현장 실측 2025.Q1]';
+ position: absolute;
+ top: -12px;
+ left: 1rem;
+ background-color: var(--acid-yellow);
+ color: var(--brutal-black);
+ font-family: var(--font-mono);
+ font-size: 0.7rem;
+ padding: 0.2rem 0.8rem;
+ font-weight: bold;
+ letter-spacing: 1px;
+}
+
+.t-box-4f3h h1 {
+ font-family: var(--font-mono);
+ font-size: 2.5rem;
+ color: var(--acid-yellow);
+ margin-bottom: 1rem;
+ letter-spacing: -1px;
+ text-transform: uppercase;
+}
+
+.t-box-4f3h h2 {
+ font-family: var(--font-mono);
+ color: var(--acid-yellow-dim);
+ font-size: 1.2rem;
+ border-left: 4px solid var(--acid-yellow);
+ padding-left: 1rem;
+ margin-top: 2rem;
+ margin-bottom: 1rem;
+}
+
+.t-box-4f3h p {
+ margin-bottom: 1.2rem;
+ font-size: 1rem;
+ color: var(--brutal-white);
+ max-width: 80ch;
+}
+
+.t-box-4f3h ul {
+ list-style: none;
+ padding-left: 0;
+ margin-bottom: 1.5rem;
+}
+
+.t-box-4f3h li {
+ margin-bottom: 0.6rem;
+ padding-left: 1.5rem;
+ position: relative;
+ color: var(--brutal-white);
+}
+
+.t-box-4f3h li::before {
+ content: '▹';
+ position: absolute;
+ left: 0;
+ color: var(--acid-yellow);
+ font-weight: bold;
+}
+
+.data-table {
+ width: 100%;
+ border-collapse: collapse;
+ margin: 1.5rem 0;
+ font-family: var(--font-mono);
+ font-size: 0.85rem;
+}
+
+.data-table th {
+ background-color: var(--acid-yellow);
+ color: var(--brutal-black);
+ padding: 0.75rem;
+ text-align: left;
+ font-weight: bold;
+ border: 2px solid var(--brutal-black);
+}
+
+.data-table td {
+ padding: 0.75rem;
+ border: 2px solid var(--brutal-gray-2);
+ color: var(--brutal-white);
+ background-color: var(--brutal-black);
+}
+
+.data-table tr:hover td {
+ background-color: var(--brutal-gray);
+}
+
+.highlight-stat {
+ display: inline-block;
+ background-color: var(--acid-yellow);
+ color: var(--brutal-black);
+ padding: 0.1rem 0.5rem;
+ font-weight: bold;
+ font-family: var(--font-mono);
+}
+
+footer {
+ background: var(--brutal-black);
+ border-top: var(--border-heavy);
+ padding: 2rem;
+ text-align: center;
+ font-family: var(--font-mono);
+ font-size: 0.8rem;
+ color: var(--acid-yellow-dim);
+ margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+ body {
+ border-left: 4px solid var(--acid-yellow);
+ border-right: 4px solid var(--acid-yellow-dim);
+ }
+ .q-hero-nivj {
+ padding: 2rem 1rem;
+ }
+ .t-box-4f3h h1 {
+ font-size: 1.8rem;
+ }
+ .t-box-4f3h p {
+ max-width: 100%;
+ }
+ .n-body-s5uf {
+ grid-template-columns: 1fr;
+ padding: 2rem 1rem;
+ }
+ .q-nav-cjy6 {
+ gap: 0.8rem;
+ padding: 0.8rem 1rem;
+ }
+ .data-table {
+ font-size: 0.7rem;
+ }
+ .v-img-kxra {
+ width: 100px;
+ height: 100px;
+ bottom: 1rem;
+ right: 1rem;
+ }
+}
+ </style>
+  <meta property="og:title" content="글 목록 (2/2) · t3b08-mg-coin-tip">
+  <meta property="og:description" content="t3b08-mg-coin-tip에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://magok-song-room.mapo-room-guide.xyz/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <h1 style="font-family: 'Courier New', monospace; color: #E6FF00; font-size: 3rem; letter-spacing: -2px; text-transform: uppercase; margin-bottom: 1rem;">마곡 코인노래방<br>정보 데이터</h1>
+ <p style="max-width: 700px; margin: 0 auto; color: #F0F0F0; font-size: 1.1rem;">
+ 마곡지구 내 코인노래방 시설에 대한 객관적 운영 정보를 수집·정리했습니다. 
+ 실무자가 예약 가능 여부를 판단하고 시설 수준을 비교할 수 있도록 
+ 연산 체계, 설비 스펙, 데이터 업데이트 주기, 공간 구성 정보를 권역별로 제공합니다.
+ </p>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 40개 · 2/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0195.html">마곡 코인노래방 꿀팁 적용한 구글 인덱싱 속도 초고속 광회선 대역폭 최적화</a>
+        <p class="post-item__summary">검색 엔진이 웹사이트의 콘텐츠를 빠르게 읽어내기 위해서는 서버의 응답 속도와 데이터 전송량이 적절한 균형을 이뤄야 합니다. 마곡 코인노래방 꿀팁에서 다루는 효율적인 동선 관리처럼, 웹사이트의 구조 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0196.html">마곡 코인노래방 꿀팁과 연계된 구글 신뢰 지수 모발이식 솔루션 분석</a>
+        <p class="post-item__summary">당신은 웹사이트의 신뢰도를 결정하는 기준이 무엇이라고 생각하시나요? 단순히 양질의 콘텐츠를 작성하는 것을 넘어, 검색 엔진이 해당 사이트를 어떻게 평가하는지에 대한 메커니즘을 이해하는 것이 중요합니</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0441.html">마곡 코인노래방 꿀팁 활용해 알아보는 합정 셔츠룸 추천정보 가이드</a>
+        <p class="post-item__summary">친구들과 갑작스럽게 합정 인근에서 시간을 보내게 되었을 때, 예상치 못한 장소 선정 문제로 당황하는 경우가 종종 발생합니다. 마곡 코인노래방 꿀팁을 떠올리며 가볍게 생각하고 접근했다가는 복잡한 유흥</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0442.html">마곡 코인노래방 꿀팁 분석으로 확인하는 공덕 가라오케 추천정보</a>
+        <p class="post-item__summary">많은 분들이 가라오케를 방문할 때 단순히 비용이 저렴한 시간대가 무조건 유리하다고 오해하곤 합니다. 마곡 코인노래방 꿀팁을 적용하여 저렴한 요금만 따지다 보면, 정작 서비스 품질이 보장되지 않는 시</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0443.html">마곡 코인노래방 꿀팁 숙지 후 상수 마사지 추천정보 및 인원 구성 팁</a>
+        <p class="post-item__summary">쾌적한 환경, 충분한 주차 공간, 전문적인 관리사, 그리고 합리적인 가격대까지 이 네 가지 조건이 충족되어야 비로소 만족스러운 마사지 경험이 가능합니다. 마곡 코인노래방 꿀팁을 참고하여 사전에 준비</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0444.html">마곡 코인노래방 꿀팁 활용하며 찾은 망원 노래방 추천정보 비교</a>
+        <p class="post-item__summary">혹시 여러분은 노래방을 선택할 때 무엇을 가장 우선순위로 두십니까? 단순히 마곡 코인노래방 꿀팁을 떠올리며 접근하기보다는, 망원동 지역만의 특색 있는 노래방 문화를 먼저 이해할 필요가 있습니다. 시</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0445.html">마곡 코인노래방 꿀팁 활용해 홍대 노래방 추천정보 확인하기</a>
+        <p class="post-item__summary">마곡 코인노래방 꿀팁을 익히는 것은 단순히 가성비를 따지는 것에 그치지 않고, 보다 넓은 지역의 시설을 평가하는 눈을 기르는 과정입니다. 이러한 노하우를 바탕으로 홍대 지역의 노래방을 찾을 때 적용</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0446.html">마곡 코인노래방 꿀팁 참고하여 공덕 셔츠룸 추천정보 선택기준</a>
+        <p class="post-item__summary">마곡 코인노래방 꿀팁을 통해 습득한 합리적인 선택 방식은 타 업종을 방문할 때도 큰 기준점이 됩니다. 특히 공덕 지역의 셔츠룸을 고려할 때, 비용 대비 가치를 어떻게 판단해야 할지 고민하는 분들이 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0447.html">마곡 코인노래방 꿀팁 알아보고 연남 유흥 추천정보 예약법</a>
+        <p class="post-item__summary">마곡 코인노래방 꿀팁을 통해 얻은 정보 활용 능력을 연남동의 유흥 시설 예약 과정에 대입해 보겠습니다. 많은 분이 예약 과정에서 실패하는 가장 큰 이유는 업체의 운영 시간을 사전에 정확히 파악하지 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0448.html">마곡 코인노래방 꿀팁 적용하여 마곡 가라오케 추천정보 체크</a>
+        <p class="post-item__summary">마곡 코인노래방 꿀팁을 활용하여 마곡 내 가라오케를 방문할 때 필수적으로 확인해야 할 사항들이 있습니다. 위치와 접근성은 단순히 지도상의 거리를 넘어, 이동 편의성과 주변 환경까지 고려해야 합니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0449.html">마곡 코인노래방 꿀팁을 활용해 마곡 유흥 추천정보 확인하기</a>
+        <p class="post-item__summary">동료들과 저녁 식사 후 간단히 노래를 부르기 위해 장소를 찾는 상황은 흔히 발생합니다. 특히 마곡 지역은 신도시 특유의 깔끔한 인프라를 갖추고 있어 처음 방문하는 이들에게는 선택지가 넓어 보일 수 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0450.html">마곡 코인노래방 꿀팁 적용 전 합정 노래방 추천정보 탐색</a>
+        <p class="post-item__summary">많은 이들이 노래방을 단순히 아무 때나 방문해도 충분한 공간이라고 오해하곤 합니다. 하지만 합정처럼 유동 인구가 많은 지역에서는 방문 시간대에 따라 서비스의 질과 가격 체계가 크게 달라질 수 있습니</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0451.html">마곡 코인노래방 꿀팁 기반 연남 클럽 추천정보 이용 가이드</a>
+        <p class="post-item__summary">성공적인 밤을 보내기 위해서는 입구의 분위기, 음악의 장르, 적절한 인원 구성이라는 세 가지 조건을 먼저 고려해야 합니다. 특히 연남 지역은 클럽마다 운영하는 성격이 뚜렷하므로 방문 전 목적과 규모</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/interview-001-1o9uubk.html">마곡역 코인노래방, 임대료보다 중요한 건 계약서 마지막 줄? 형님이 알려드려요^^</a>
+        <p class="post-item__summary">2023 년 겨울, 마곡역 인근 한 코인 노래방 임대차 갱신 협상 현장에서 보증금 반환 소송이 예상되는 긴장된 분위기였어요. 제가 직접 조율했던 2 억 원대 권리금을 주고 나간 가게의 실거래 내역을</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-1.html">마곡 코인노래방 이용 안내</a>
+        <p class="post-item__summary">코인노래방을 이용할 때는 먼저 이용 요금 체계를 확인하는 것이 중요합니다. 시간제 요금과 무제한 요금 중 자신의 상황에 맞는 방식을 선택해야 하며, 일반적으로 오후 시간대와 야간 시간대의 요금이 다</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-2.html">마곡 코인노래방 꿀팁</a>
+        <p class="post-item__summary">마곡 지역에서 코인노래방을 이용할 때 깨끗한 환경이 중요합니다. 특히 취향에 맞는 노래방을 고를 때는 실내 위생 상태뿐만 아니라 주변의 청결한 시설 여부도 함께 고려해야 합니다. 노래방 내부의 공기</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-1.html">마곡 코인노래방 방문 안내</a>
+        <p class="post-item__summary">마곡 지역에 위치한 코인노래방은 지하철과 버스 접근이 모두 좋아 많은 이용객이 방문합니다. 노래방을 이용할 때는 미리 예약 여부를 확인하고, 이용 시간대를 고려하여 방문하는 것이 좋습니다. 특히 평</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-2.html">마곡 코인노래방 꿀팁: 카드 혜택 구조</a>
+        <p class="post-item__summary">마곡 지역에서 코인노래방을 이용할 때, 단순히 요금만 비교하는 것이 아니라 결제 시 발생하는 카드 혜택 구조를 꼼꼼히 살펴보는 것이 현명합니다. 각 카드사별로 제공하는 할인 행사나 포인트 적립률은 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-3.html">마곡 코인노래방 꿀팁</a>
+        <p class="post-item__summary">마곡 지역 코인노래방을 방문할 때는 기본적인 용어와 시스템에 대한 이해가 도움을 줄 수 있습니다. 방 종류나 음질 설정, 시간 단위 계산 방법 등은 업소마다 차이가 있을 수 있으니, 방문 전에 미리</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/t3link-002-1b15lhs.html">형님 눈으로 본 그레고리의 창과 노래방 카드의 숨은 비밀</a>
+        <p class="post-item__summary">gloomhaven, 1st edition, 2nd edition, class card comparison, ravenloft, tabletop gaming, stat change, balance </p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
